@@ -8,7 +8,7 @@ export default class MyList extends Component{
 
     onClick(id){
         const {name} = this.props.items.find(i => i.id === id)
-        console.log('clicked', `${name}`);
+        console.log('clicked', `"${name}"`);
     }
 
     render(){
