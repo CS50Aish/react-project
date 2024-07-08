@@ -9,7 +9,7 @@ class Bike extends React.Component{
             color:"blue"
         }
     };
-
+    
     changeBikeColor = () => {
         this.setState({color:"black"});
     }
@@ -18,11 +18,12 @@ class Bike extends React.Component{
         return (
             <div>
                 <h2>My {this.state.make}</h2>
-                <p>It is a {this.state.color} {this.state.model} </p>
+                <p>It is a {this.state.color} {this.state.model}.</p>
                 <button type="button" onClick={this.changeBikeColor}>Change Color</button>
             </div>
         )
     }
+
 }
 
 export default Bike;
